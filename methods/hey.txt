@@ -1,0 +1,55 @@
+one-static method inside main class
+two-non static method inside main class
+
+three static method inside different class
+four non-static method insider different class
+
+
+if static keyword ----no object require to call to the method.
+if no static keyword  ------- object require to call the method.
+
+
+
+class Student {
+
+    static int collegeCode = 101;
+    int age = 20;
+
+    static void showCollege() {
+        System.out.println(collegeCode);
+    }
+
+    void showAge() {
+        System.out.println(age);
+    }
+}
+
+Here:
+
+Student
+│
+├── static collegeCode   ← belongs to Student class
+├── age                   ← belongs to each Student object
+│
+├── static showCollege()  ← belongs to Student class
+└── showAge()             ← belongs to each Student object
+
+========================================================================================================================================
+class Student {
+    int collegeCode;
+}
+
+Student s1 = new Student();
+Student s2 = new Student();
+
+s1.collegeCode = 101;
+s2.collegeCode = 102;
+
+each object has its own values. basically collegeCode belongs to every induvidual object.
+
+===================================================================================================================================
+class Student {
+    static int collegeCode = 101;
+}
+
+now it only belongs to the Student class // and can be accessed using Student.collegeCode;
