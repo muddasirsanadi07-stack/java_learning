@@ -1,0 +1,33 @@
+ABSTRACT CLASSES AND INTERFACES
+===============================
+
+Abstraction
+-----------
+Abstraction exposes what a type can do while hiding unnecessary details about
+how it does it.
+
+Abstract class
+--------------
+- Cannot be instantiated directly.
+- Can have constructors, fields, concrete methods, and abstract methods.
+- A concrete subclass must implement all inherited abstract methods.
+- Use it when related classes share base state or implementation.
+
+Interface
+---------
+- Defines a contract or capability that implementing classes provide.
+- A class may implement multiple interfaces.
+- Methods without bodies are implicitly public and abstract.
+- Modern interfaces may also declare default, static, and private methods.
+- Use it to describe a capability that may be shared by otherwise unrelated
+  classes.
+
+Quick comparison
+----------------
+Abstract class: "is a" shared family/base.
+Interface:      "can do" capability/contract.
+
+Examples
+--------
+AbstractClassExample.java has an abstract animal family.
+InterfaceExample.java implements two independent device capabilities.

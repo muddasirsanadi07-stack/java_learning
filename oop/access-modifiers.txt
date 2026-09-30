@@ -1,0 +1,42 @@
+JAVA MODIFIERS
+==============
+
+Definition
+----------
+Modifiers are keywords that control access or change the behavior of classes,
+fields, methods, and constructors.
+
+ACCESS MODIFIERS
+----------------
+Modifier       Same class   Same package   Subclass outside package   Other package
+private        Yes          No             No                        No
+package-private Yes          Yes            No                        No
+protected      Yes          Yes            Yes*                      No*
+public         Yes          Yes            Yes                       Yes
+
+* protected access across packages is available through subclassing and has
+  additional Java access rules; it is not unrestricted public access.
+Package-private means no access keyword is written.
+
+KEY POINTS
+----------
+- A top-level class can be public or package-private; not private/protected.
+- Only one public top-level class is allowed per source file, and its name
+  must match the filename.
+- private is useful for hiding implementation details and protecting state.
+- Use the narrowest access level that meets the design.
+
+OTHER MODIFIERS
+---------------
+- static: class member, rather than per-object member.
+- final: prevents reassignment, overriding, or subclassing depending on use.
+- abstract: declares an incomplete class or method for subclasses to complete.
+- synchronized: coordinates access to a method/block between threads.
+- volatile: provides visibility guarantees, but not atomic compound updates.
+- transient: excludes a field from default Java serialization.
+- native: method implementation is supplied outside Java.
+
+Examples
+--------
+See ../methods/static-and-instance-members.txt for static and instance, and
+abstraction/abstract-class-vs-interface.txt for abstract.

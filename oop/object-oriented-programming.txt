@@ -1,0 +1,23 @@
+OBJECT-ORIENTED PROGRAMMING
+==========================
+
+Definitions
+-----------
+- Object-oriented programming (OOP) organizes software around objects that
+  combine state (data) and behavior (methods).
+- A class is a definition or blueprint describing fields and methods.
+- An object is a runtime instance of a class, usually created with new.
+- A field stores state; a method describes behavior.
+
+Key points
+----------
+- Each object has its own instance fields.
+- Static fields belong to the class and are shared.
+- The four commonly taught OOP principles are encapsulation, inheritance,
+  polymorphism, and abstraction.
+- These are design ideas, not requirements that every program must use.
+
+Examples
+--------
+- Student is a class; a particular student object has its own name and age.
+- See the sibling folders for individual examples of the four OOP principles.

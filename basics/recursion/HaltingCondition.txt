@@ -1,0 +1,21 @@
+RECURSION AND THE HALTING CONDITION
+==================================
+
+Definition
+----------
+Recursion is a technique where a method calls itself to solve a smaller
+version of a problem. The halting condition (base case) is the condition that
+stops further recursive calls.
+
+Key points
+----------
+- Every recursive path must eventually reach a base case.
+- Each call should make progress toward that base case.
+- A missing or unreachable base case can cause StackOverflowError.
+- For a loop-shaped problem, an iterative solution may be simpler and use
+  less call-stack space.
+
+Example
+-------
+HaltingConditionExample.countDown(3) prints 3, 2, 1, then Done. The base case
+is number == 0; number - 1 moves each call toward it.

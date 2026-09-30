@@ -1,0 +1,29 @@
+Java Set Classes — Key Points
+Set
+    Interface in java.util
+    No duplicate elements
+    No index → no get() / set()
+    Common methods: add(), remove(), contains(), size(), isEmpty(), clear()
+
+HashSet
+    Implements Set
+    No duplicates
+    No guaranteed order
+    Uses hashing
+    Generally fast add(), remove(), contains()
+    Allows one null
+
+LinkedHashSet
+    Extends HashSet behavior
+    No duplicates
+    Maintains insertion order
+    Slightly more memory than HashSet
+    Allows one null
+
+TreeSet
+    Implements NavigableSet → SortedSet → Set
+    No duplicates
+    Maintains sorted order
+    Uses a tree-based structure
+    Generally add(), remove(), contains() → O(log n)
+    Does not allow null in normal natural-order usage

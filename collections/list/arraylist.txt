@@ -1,0 +1,23 @@
+List<Integer>              ArrayList<Integer>
+     ↑                            ↑
+  interface                   class
+  "what"                     "how"
+     \                          /
+      \                        /
+       ---- ArrayList implements List
+
+both gives same behavior: Mostly.
+List = interface defining the list's behavior.
+ArrayList = a class that implements that behavior using a resizable array.
+--------------------------------------------------------------------------------------------------------------------------
+Why not just write ArrayList?
+
+You can:
+ArrayList<Integer> numbers = new ArrayList<>();
+
+But usually you write:
+List<Integer> numbers = new ArrayList<>();
+
+because you are saying:
+"I only care that this object behaves like a List. 
+I don't want my code unnecessarily tied to the ArrayList implementation."

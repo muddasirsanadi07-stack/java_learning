@@ -1,0 +1,37 @@
+JAVA: DEFINITION AND OVERVIEW
+=============================
+
+Java is a high-level, general-purpose, class-based programming language. Java
+source is compiled to platform-independent bytecode, which runs on a
+platform-specific Java Virtual Machine (JVM).
+
+SOURCE CODE -> javac compiler -> BYTECODE (.class) -> JVM -> processor
+
+KEY TERMS
+---------
+- JDK (Java Development Kit): tools for developing Java programs, including
+  javac, plus runtime components.
+- JVM (Java Virtual Machine): loads and executes Java bytecode.
+- JRE (Java Runtime Environment): runtime libraries and components needed to
+  run Java programs; modern Java distributions may package this differently.
+- Bytecode: the intermediate instructions stored in .class files.
+- JIT compiler: a JVM component that can compile frequently executed bytecode
+  into native machine code while the program runs.
+
+KEY POINTS
+----------
+- Java is statically typed: types are checked during compilation.
+- Garbage collection manages memory for unreachable objects.
+- The same bytecode can run on different systems that have compatible JVMs.
+- Java is used for server, enterprise, desktop, and many other applications.
+- Trade-offs include JVM/runtime requirements and sometimes more memory and
+  boilerplate than lighter-weight alternatives.
+- Inspect bytecode with: javap -c ClassName
+
+EXAMPLE WORKFLOW
+----------------
+1. Save a class named Hello in Hello.java.
+2. Compile: javac Hello.java
+3. Run: java Hello
+
+The name passed to java is the class name, without .java or .class.

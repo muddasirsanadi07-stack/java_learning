@@ -1,0 +1,34 @@
+STATIC AND INSTANCE MEMBERS
+==========================
+
+Definition
+----------
+A static field or method belongs to its class. An instance field or method
+belongs to one object.
+
+Key points
+----------
+- Use ClassName.member to access a static member.
+- Create an object with new before using an instance method or field.
+- Each object has its own instance fields; all objects share a static field.
+- A static method has no current this object and cannot directly use
+  instance members.
+- main is static so the JVM can start the program without creating the class
+  that contains main.
+- In Java, a function declared inside a class is called a method.
+
+Example
+-------
+class Student {
+    static String college = "North Campus";
+    int age;
+}
+
+Student first = new Student();
+Student second = new Student();
+first.age = 19;
+second.age = 21;
+System.out.println(Student.college); // shared by both
+
+See the four neighboring Java programs for static/instance methods declared
+in the same class and in a different class.
