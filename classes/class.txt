@@ -1,0 +1,12 @@
+Class
+class is blueprint to create object . class defines the behavior and state that object of that class can have.
+State → fields/data the object will contain
+Behavior → methods/actions the object can perform
+
+Object:An object is a concrete instance of a class.
+method/attributes
+
+
+Class	                                                           Object
+Defines what something should contain/do	            Represents an actual instance
+Describes structure and behavior                    	Holds actual data/state

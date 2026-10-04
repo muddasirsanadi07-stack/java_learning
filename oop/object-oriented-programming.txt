@@ -21,3 +21,22 @@ Examples
 --------
 - Student is a class; a particular student object has its own name and age.
 - See the sibling folders for individual examples of the four OOP principles.
+
+
+
+ever wondered :
+why we need static instead we can just use new objects.
+what is the use of this keyword
+
+
+modifiers 
+1.access modifiers
+    private   → same class
+    default   → same package
+    protected → package + subclasses
+    public    → everywhere
+2.non access modifiers 
+    static	Belongs to the class rather than an object
+    final	Prevents changing/overriding/extending
+    abstract	Declares incomplete class/method
+    synchronized	Controls thread access to a method/block

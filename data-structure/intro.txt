@@ -1,0 +1,80 @@
+Data Structures
+│
+├── Primitive
+│   ├── int
+│   ├── char
+│   ├── float
+│   ├── double
+│   ├── boolean
+│   └── ...
+│
+└── Non-primitive
+    ├── Linear
+    └── Non-linear
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Linear
+│
+├── Array
+│
+├── Linked List
+│   ├── Singly Linked List
+│   ├── Doubly Linked List
+│   └── Circular Linked List
+│
+├── Stack
+│
+└── Queue
+    ├── Simple Queue
+    ├── Circular Queue
+    ├── Priority Queue
+    └── Deque
+-------------------------------------------------------------------------------------------------------------------------------------
+Non-linear
+│
+├── Tree
+│   ├── Binary Tree
+│   ├── Binary Search Tree (BST)
+│   ├── AVL Tree
+│   ├── Red-Black Tree
+│   ├── Heap
+│   │   ├── Min Heap
+│   │   └── Max Heap
+│   ├── B-Tree
+│   ├── B+ Tree
+│   └── Trie
+│
+└── Graph
+    ├── Directed Graph
+    ├── Undirected Graph
+    ├── Weighted Graph
+    └── Unweighted Graph.
+
+and many more................................
+
+
+=================================================================================================================================================
+for now 
+1. Array
+      ↓
+2. ArrayList
+      ↓
+3. Linked List
+      ↓
+4. Stack
+      ↓
+5. Queue / Deque
+      ↓
+6. HashMap / HashSet
+      ↓
+7. Tree
+      ↓
+8. BST
+      ↓
+9. Heap / PriorityQueue
+      ↓
+10. Graph
+      ↓
+11. Trie
+      ↓
+12. Advanced structures

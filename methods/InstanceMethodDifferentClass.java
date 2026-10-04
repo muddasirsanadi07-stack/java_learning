@@ -1,6 +1,6 @@
 /**
  * Lesson: create an instance of another class before calling its instance
- * method.
+ * method
  */
 public class InstanceMethodDifferentClass {
     public static void main(String[] args) {

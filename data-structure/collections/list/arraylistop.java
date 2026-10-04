@@ -24,7 +24,7 @@ class Main {
         System.out.println("size:"+num.size()); //4
         //-----------------isEmpty   contains----------
         System.out.println("isEmpty"+num.isEmpty());
-        System.out.println("isEmpty"+num.contains(Integer.valueOf(20)));
+        System.out.println("contains"+num.contains(Integer.valueOf(20)));
         //-------------------sorting-------------
         num.sort(null);
         System.out.println("sort"+num);

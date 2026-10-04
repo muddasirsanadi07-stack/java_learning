@@ -6,14 +6,44 @@ Abstraction
 Abstraction exposes what a type can do while hiding unnecessary details about
 how it does it.
 
-Abstract class
+Abstract class:  Define a common structure for related classes, while forcing them to provide certain behavior themselves.
 --------------
 - Cannot be instantiated directly.
 - Can have constructors, fields, concrete methods, and abstract methods.
 - A concrete subclass must implement all inherited abstract methods.
 - Use it when related classes share base state or implementation.
+             Animal
+        ┌─────────────────┐
+        │ COMMON          │
+        │ eat()           │  ← shared implementation
+        │                 │
+        │ REQUIRED        │
+        │ sound()         │  ← child must implement
+        └────────┬────────┘
+                 │
+          ┌──────┴──────┐
+          ↓             ↓
+        Dog            Cat
+       Bark            Meow
 
-Interface
+
+
+
+
+
+
+
+
+
+
+
+Abstract class = common base + required behavior.
+Interface = contract/capability.
+
+
+
+
+Interface:  An interface defines a contract: any class that implements it promises to provide certain behavior.
 ---------
 - Defines a contract or capability that implementing classes provide.
 - A class may implement multiple interfaces.
@@ -31,3 +61,7 @@ Examples
 --------
 AbstractClassExample.java has an abstract animal family.
 InterfaceExample.java implements two independent device capabilities.
+
+
+
+

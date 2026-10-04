@@ -1,0 +1,78 @@
+Primitive types
+│
+├── Integer types
+│   ├── byte                             
+│   ├── short
+│   ├── int
+│   └── long   (......L)
+│
+├── Floating-point types
+│   ├── float  (.......f)
+│   └── double
+│
+├── Character type
+│   └── char                  -UTF-16 code unit.
+│
+└── Boolean type
+    └── boolean
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+    Note: do you know double 0.1 + 0.2 = 0.30000000000000004   why:floating point precision
+    as 0.1 and 0.2, cannot be represented exactly in binary.
+
+    Note: int x=1_2_3;  //this is valid
+    helps for reading large numbers : long salary=9_000_000_000_000_000L;
+
+    Do You Know:byte + byte → int
+    byte a = 10, b=20;
+    byte c = (byte)(a + b);                   //requires casting . bc java promote to int after the opertions (inc. byte long short)
+
+    double x = 0.0 / 0.0;   --->output: NaN    (not a numebr)
+    double x=10.0/0.0       --->output: Infinity
+
+    --------------------------------------------------------------------------------------------------------------------------------
+    reference data types------------------------------------------------------------------------------------------------------
+    ├── Class
+    ├── Object
+    ├── Array              
+    ├── String
+    └── Interface references
+
+--array.length                   // field not a method.
+--String.length()                //method.    because String is class in java
+--uninitialized datatype varible or variable reference have 0 0.0 '\u0000' false  null as default values.
+--Strings are immutable
+
+String name = "Rahul";
+name is a reference variable.
+Conceptually:
+name
+ │
+ │ reference
+ ↓
+┌──────────────┐
+│ String object │
+│ "Rahul"       │
+└──────────────┘
+
+--------------------------------------------------------------
+String a = "Hello";
+String b = "Hello";
+Conceptually:Java can reuse the same String literal from the String Pool.
+a ─────┐
+       ↓
+    ┌─────────┐
+    │ "Hello" │
+    └─────────┘
+       ↑
+b ─────┘
+
+String a = new String("Hello");
+String b = new String("Hello");
+
+System.out.println(a == b);       // false
+System.out.println(a.equals(b));  // true
+
+== compares references for objects.
+.equals() compares content for String.

@@ -12,9 +12,15 @@ public class MathExample {
         System.out.println("Rounded: " + Math.round(5.55));
         System.out.println("Pi: " + Math.PI);
 
+        double x = 5.7;
+
+        System.out.println(Math.floor(x));
+        System.out.println(Math.ceil(x));
+
         int min = 50;
         int max = 100;
         int randomInteger = (int) (Math.random() * (max - min + 1)) + min;
         System.out.println("Random integer: " + randomInteger);
     }
 }
+//

@@ -7,3 +7,14 @@ public class FieldAccessExample {
         System.out.println(SharedField.age);
     }
 }
+
+
+/*
+| Access specifier           | Same class   | Same package  | Subclass in different package  | Different package, non-subclass   |
+| -------------------------- | :--------:   | :----------:  | :---------------------------:  | :-----------------------------:   |
+| `private`                  |      ✅     |       ❌      |               ❌               |                ❌                |
+| **default** *(no keyword)* |      ✅     |       ✅      |               ❌               |                ❌                |
+| `protected`                |      ✅     |       ✅      |               ✅*              |                ❌*               |
+| `public`                   |      ✅     |       ✅      |               ✅               |                ✅                |
+
+ */

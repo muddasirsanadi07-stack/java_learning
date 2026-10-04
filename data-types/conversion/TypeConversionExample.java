@@ -34,3 +34,8 @@ public class TypeConversionExample {
         System.out.println(String.join(" ", words));
     }
 }
+
+//String s = Arrays.toString(arr);
+
+//System.out.println(s);  // [1, 2, 3, 4]
+

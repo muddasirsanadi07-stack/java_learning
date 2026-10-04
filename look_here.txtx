@@ -1,0 +1,39 @@
+Other topics : please study on your own.
+
+enumeration enum:
+    preventing invalid values.
+
+condition statements:
+    if
+    if else 
+    if else if
+    if ?:;
+    switch
+
+loops:
+    while() 
+    do while()
+    for()
+    for(i:x)
+
+recursion:
+break:
+continue:
+
+Operators:
+Error
+super keyword
+this keyword
+Dates
+constructor
+Annotations.
+RegEX
+Threads.
+
+files Operations:
+Package Handling:
+Exception Handling:
+
+ETC...................................
+
+Quick Notes: https://www.w3schools.com/java/java_ref_reference.asp
